@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeScreen"
+    android:background="#00bf63">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/logo"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/welcome_bg">
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:gravity="center"
+                android:layout_marginBottom="250dp"
+                android:background="@drawable/main_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SETUP DEVICE\nOPERATION AS"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTRY"
+                android:background="@drawable/button_op"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="15dp"
+                android:id="@+id/btnEntryOperation"
+                android:letterSpacing=".1"
+                android:layout_margin="15dp"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXIT"
+                android:background="@drawable/button_op"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="15dp"
+                android:id="@+id/btnExitOperation"
+                android:letterSpacing=".1"
+                android:layout_margin="15dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

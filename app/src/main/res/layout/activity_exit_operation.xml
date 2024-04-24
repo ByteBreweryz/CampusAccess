@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00bf63"
+    android:padding="25dp"
+    tools:context=".ExitOperation">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:elevation="255dp"
+        android:background="@drawable/button_op"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/linearProgressExit"
+        android:padding="20dp">
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressDrawable="@drawable/progress_bar"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/progress_bar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please wait..."
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:layout_margin="15dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:orientation="vertical"
+        android:elevation="45dp"
+        android:id="@+id/linearButtonLogoutExit"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/button_op">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logout"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="35dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/main_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="J.H. Cerilles State College"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mati, San Miguel, Zamboanga Del Sur"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEVICE OPERATION: EXIT"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_bold"
+            android:textSize="12dp"
+            android:background="@drawable/button_op"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/button_op"
+            android:layout_marginTop="35dp">
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/logo"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="15dp"
+            android:background="@drawable/button_op"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan Identification Card"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="18dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="012345678"
+            android:background="@drawable/rfidcode_field"
+            android:padding="15dp"
+            android:textColorHint="#FFFFFF"
+            android:enabled="false"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat_semibold"
+            android:letterSpacing=".2"
+            android:id="@+id/etScannedRfidExit"
+            android:textColor="#FFFFFF"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Enter Manually"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textSize="15dp"
+                    android:id="@+id/tvBtnFormExit"
+                    android:textColor="#1aff90"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    android:src="@drawable/nfc"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone"
+        android:layout_margin="15dp"
+        android:id="@+id/linearManualFormExit"
+        android:background="@drawable/light_main_bg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/main_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PROVIDE IDENTIFICATION CODE"
+                android:fontFamily="@font/montserrat_regular"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rfidcode_field"
+                        android:padding="10dp"
+                        android:id="@+id/etRfidCodeExit"
+                        android:inputType="number"
+                        android:textSize="18dp"
+                        android:enabled="false"
+                        android:hint="2021351646"
+                        android:textColorHint="#ECE0E0"
+                        android:textColor="#FFFFFF"
+                        android:fontFamily="@font/montserrat_semibold"
+                        android:layout_marginTop="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".3"
+                    android:layout_margin="10dp"
+
+                    android:orientation="vertical">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rfidcode_field"
+                        android:text="X"
+                        android:id="@+id/btnClearExit"
+                        android:layout_marginTop="12dp"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--     Create a buttons here       -->
+
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="CONTINUE"
+            android:id="@+id/btnContinueExit"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/montserrat_regular"/>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="4"
+            android:id="@+id/gridNumberPadExit"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <!--      Button 7      -->
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+            <!--      Button 8      -->
+
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+
+            <!--      Button 9      -->
+
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+
+            <!--      Button 4      -->
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+
+            <!--      Button 5      -->
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+
+            <!--      Button 6      -->
+
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+
+            <!--      Button 1      -->
+
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+
+            <!--      Button 2      -->
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+
+            <!--      Button 3      -->
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+
+            <!--      Button disabled      -->
+
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_disabled"
+                android:layout_margin="10dp"
+                />
+
+            <!--      Button 0      -->
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="10dp"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="20dp"
+                />
+
+            <!--      Button disabled      -->
+            <Button
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:background="@drawable/button_disabled"
+                android:layout_margin="10dp"
+                />
+
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/form_close_icon"
+            android:padding="3dp"
+            android:id="@+id/linearButtonCloseExit"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/down"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

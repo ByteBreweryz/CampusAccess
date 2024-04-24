@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/id_card_bg"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@drawable/button_op"
+        android:id="@+id/linearIdentificationHeader">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".1">
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/logo"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".5"
+            android:paddingStart="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="J.H. Cerilles State College"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_semibold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mati, San Miguel, Zamboanga Del Sur"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/montserrat_regular"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:elevation="15dp"
+        android:padding="10dp"
+        android:layout_below="@id/linearIdentificationHeader"
+        android:background="@drawable/button_op">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:id="@+id/imgProfile"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/linearIdentificationHeader"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button_op"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USERNAME"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tvUsername"
+            android:textSize="18dp"
+            android:layout_marginTop="75dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POSITION"
+            android:fontFamily="@font/montserrat_regular"
+            android:textColor="#FFFFFF"
+            android:id="@+id/tvPosition"
+            android:textSize="15dp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RFID Code"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
+                    android:textSize="15dp"
+                    android:gravity="start"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000000"
+                    android:id="@+id/tvRfidCode"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="start"
+                android:gravity="start"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Entry Time"
+                    android:id="@+id/tvLabel"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textColor="#FFFFFF"
+                    android:textAlignment="textStart"
+                    android:textSize="15dp"
+                    android:gravity="start"
+                    android:layout_gravity="start"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:54:06AM"
+                    android:id="@+id/tvEntryTime"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:layout_gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
